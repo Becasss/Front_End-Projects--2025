@@ -8,3 +8,119 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* Body Stylings */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeef0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+
+
+/*  To- Do Containers */
+
+.todo-container{
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(32, 8, 8, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Headings */
+
+h1{
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+/* Input Field */
+.input-section{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    font-size: 16px;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+}
+button:hover{
+    background-color: #0056b3;
+}
+
+
+/* Task List */
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+
+}
+li.completed{
+    text-decoration: line-through;
+    color: #aaa;
+
+}
+
+.delete-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover{
+    background-color: darkred;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    button{
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+    input{
+        font-size: 15px;
+
+    }
+    li{
+        font-size: 14px;
+    }
+}
