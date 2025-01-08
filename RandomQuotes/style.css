@@ -1,95 +1,43 @@
+/* styles.css */
 body {
-  /*text-align: center;*/
-  background-size: cover;
-  color: white;
-  font-family: 'Amatic SC', cursive;
-  background-color: rgb(95,207,128);
-}
-#quote-box {
-  position: absolute;
-  top: 14%;
-  left: 10%;
-  right: 10%;
-  width: 80%;
-  line-height: .5;
-}
-.quote {
-  font-size: 6rem;
-  font-weight: 400;
-  line-height: 1.1;
-  text-shadow: 0 1px 1px rgba(0,0,0, .8);
-  position: relative;
-  margin: 0;
-  } 
-.quote:before, .quote:after {
-  font-size: 6rem;
-  line-height: 2.5rem;
-  position: absolute;
-}
-.quote:before {
-  content: "“";
-  top: .25em;
-  left: -.5em;
-}
-.quote:after {
-  content: "”";
-  bottom: -.1em;
-  margin-left: .1em;
-  position: absolute;
-}
-.source {
-  font-size: 2.5rem;
-  letter-spacing: 0.05em;
-  line-height: 1.1;
-  text-align: right;
-  margin-right: 4em;
-}
-.source:before {
-  content: "—";
-}
-.citation {
-  font-size: 2.5rem;
-  font-style: italic;
-}
-.citation:before {
-  content: ", ";
-  font-style: normal;
-}
-.year:before {
-  content: ", ";
-  font-style: normal;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-#loadQuote {
-  font-size: 2.5rem;;
-  position: fixed;
-  width: 7em;
-  display: inline-block;
-  left: 50%;
-  margin-left: -6em;
-  bottom: 150px;
-  border-radius: 4px;
-  border: 2px solid #fff;
-  color: #fff;
-  background-color: rgba(255,255,255, 0);
-  padding: 15px 0;
-  transition: .5s ;
-}
-#loadQuote:hover {
-  background-color: rgba(255,255,255,.25);
-}
-#loadQuote:focus {
-  outline: none;
+.container {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 420px) {
-  .quote {
-    font-size: 2.5rem;
-  }
-  .quote:before, .quote:after {
-    font-size: 3rem;
-  }
-  .source {
-    font-size: 1rem;
-  }
+.app-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffdd57;
+}
+
+.quotes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.quote-card {
+    background: #ffffff;
+    color: #333333;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0
 }
