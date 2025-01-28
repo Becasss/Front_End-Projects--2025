@@ -25,4 +25,27 @@ body{
 }
 .hour{
     width: 6px;
+    height: 50px;
+    background-color: #000;
+}
+.minutes{
+    width: 4px;
+    height: 70px;
+    background-color: #007bff;
+}
+.second{
+    width: 2px;
+    height: 80px;
+    background-color: #ff0000;
+
+}
+.center-dot{
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
